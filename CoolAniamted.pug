@@ -1,0 +1,71 @@
+head
+    style 
+        /**
+* get random number.
+* @param {number} min - min number.
+* @param {number} max - max number.
+*/
+
+random(min,max)
+  return floor(math(0, 'random') * (max - min + 1) + min)
+
+/*
+* variable
+*/
+
+_number_of_text = 100;
+_font_size = 100;
+_split_size = 400 / _number_of_text;
+
+*, *::before, *::after
+  box-sizing: border-box;
+
+html, body
+  height: 100%;
+  width: 100%;
+  
+body
+  font-family: 'arial black', 'Impact', sans-serif;
+  background: #000;
+  font-size: 67.5%;
+  position: relative;
+  overflow: hidden;
+  color: red;
+  text-align: center;
+
+.text
+  font-size: _font_size px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+
+for i in (0.._number_of_text)
+  .text-{i}
+    clip: rect(0px, (i * _split_size + _split_size)px, 999px, (i * _split_size)px);
+    animation: text-animation-1- + i 10s ease-in-out 0s infinite normal none;
+    
+for i in (0.._number_of_text)
+  @keyframes text-animation-1-{i}
+    0%
+      _num = cos(random(0, 90)deg) * 500 px;
+      clip: rect(0px, (i * _split_size + _split_size)px, 999px, (i * _split_size)px);
+      top: "calc(50% - %s)" % _num;
+      opacity: 0;
+    50%
+      clip: rect(0px, (i * _split_size + _split_size)px, 999px, (i * _split_size)px);
+      top: 50%;
+      opacity: 1;
+    100%
+      _num = cos(random(0, 90)deg) * 500 px;
+      clip: rect(0px, (i * _split_size + _split_size)px, 999px, (i * _split_size)px);
+      top: "calc(50% + %s)" % _num;
+      opacity: 0;
+
+- for (var i = 0; i < 100; i++)
+  .text(class="text-" + i) 
+    | sleman
+    br
+    | zaitoun
+    

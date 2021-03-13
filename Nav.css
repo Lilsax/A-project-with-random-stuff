@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@300;600&display=swap");
+.bars-icon {
+  display: none !important ;
+  color: white;
+}
+
+.nav-after-scroling {
+    
+}
+
+.nav-main-dev {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  height: 300px;
+  background-color: #211F5F;
+}
+.nav-main-dev .accounting {
+  position: absolute;
+  left: 10px;
+  top: -10px;
+}
+.nav-main-dev .logo {
+  font-family: "Changa", sans-serif;
+  font-weight: 300;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.nav-main-dev .logo div {
+  color: white;
+  display: flex;
+}
+.nav-main-dev .logo * {
+  margin: 0px 30px 10px 30px;
+}
+.nav-main-dev .logo :first-child {
+  height: 20px;
+}
+.nav-main-dev .logo img {
+  display: block;
+}
+.nav-main-dev .nav-data {
+  width: 100%;
+}
+.nav-main-dev .nav-data i {
+  display: none;
+}
+.nav-main-dev .nav-data ul {
+  display: flex;
+  width: 90%;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  font-family: "Changa", sans-serif;
+  font-weight: 300;
+}
+.nav-main-dev .nav-data ul :first-child {
+  margin-top: -5px;
+}
+.nav-main-dev .nav-data li {
+  margin: 0px 20px;
+  list-style-type: none;
+  color: white;
+}
+
+.dis-none {
+  display: none;
+  transition: display 2s;
+}
+
+.dis-show {
+  display: block;
+  transition: display 2s;
+}
+
+.mobile-list {
+    display: none;
+  background-color: #211F5F;
+  padding: 0px 20px;
+  box-sizing: border-box;
+  height: 544px;
+  width: 100%;
+  margin: 0 20px;
+  margin: auto;
+  transition: display 2s;
+}
+.mobile-list .first-div-mobile {
+  height: 50px;
+  position: relative;
+  border-bottom: 1px solid #8080806e;
+  padding: 16px;
+}
+.mobile-list .first-div-mobile img {
+  margin-top: -23px;
+  position: absolute;
+}
+.mobile-list .first-div-mobile span {
+  color: white;
+  width: 100%;
+  margin: 10px;
+}
+.mobile-list ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: "Changa", sans-serif;
+  font-weight: 300;
+  border-bottom: 1px solid #8080806e;
+}
+.mobile-list ul :first-child {
+  margin-top: -5px;
+}
+.mobile-list li {
+  margin: 0px 20px;
+  list-style-type: none;
+  color: white;
+}
+
+.soicals {
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .soicals {
+        margin-top: 20px;
+    }
+
+    .mobile-list ul {
+        margin: 0;
+        padding-bottom: 12px;
+    }
+
+    .mobile-list .first-div-mobile {
+     
+        padding-bottom: 20px;
+    }
+
+    .mobile-list ul :first-child {
+        margin: 0px;
+    }
+
+    .mobile-list li {
+        margin: 0px 20px;
+        list-style-type: none;
+        color: white;
+        padding: 4px 0px;
+    }
+
+    .nav-main-dev {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 70px;
+        background-color: #211F5F;
+      }
+
+    .mobile-list{
+        display: none;
+        text-align: center;
+        flex-direction: column;
+        position: relative;
+    }
+    .bars-icon {
+        display: block !important;
+        position: absolute;
+        top: 22px;
+        right: 20px;
+        font-size: 20px;
+    }
+  .logo img:first-child {
+    display: none;
+  }
+
+  .logo img:last-of-type {
+    width: 65%;
+  }
+
+  .logo div {
+    display: none !important;
+  }
+
+  .accounting {
+    display: none;
+  }
+
+  i {
+    display: block;
+  }
+
+  .nav-main-dev .nav-data ul {
+    display: none;
+  }
+}

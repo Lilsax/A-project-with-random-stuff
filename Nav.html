@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./Nav.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <title>Document</title>
+</head>
+<body >
+    <div class="nav-main-dev">
+      <i  class="fa fa-bars bars-icon"></i>
+
+      <div id="mobile-list-list" class="mobile-list">
+
+        <div class="first-div-mobile">
+          <img class="" src="./Assets/Group 91.png" />
+          <span>اللغة : English</span>
+          <i   class="fa fa-times-circle bars-icon"></i>
+        </div>
+
+        <div>
+          <ul>
+            <li>
+              <img src="./Assets/Book.png" />
+            </li>
+            <li>مستشفيات</li>
+            <li>تخصصات</li>
+            <li>مراكز متخصصة</li>
+            <li>اطباء</li>
+            <li>صيدليات</li>
+            <li>علاقات المستثمرين</li>
+            <li>مراكز متخصصة</li>
+            <li>خدمات الكترونيه</li>
+            <li>من نحن</li>
+            <li>التعليم</li>
+            <li style="margin-top: 11px">
+              <img src="./Assets/Search.png" />
+            </li>
+          </ul>
+        </div>
+        <div class="soicals">
+          <img style="padding-bottom: 15px" src="./Assets/Social.png">
+        </div>
+      </div>
+        <img class="accounting" src="./Assets/Group 91.png" />
+        <div class="logo">
+          <img style="padding-bottom: 15px" src="./Assets/Social.png" />
+          <img src="./Assets/Logo.png" />
+          <div>
+            <span>اللغة : English</span>
+            <img src="./Assets/Group 82.png" />
+          </div>
+        </div>
+  
+        <div class="nav-data">
+          <ul>
+            <li>
+              <img src="./Assets/Book.png" />
+            </li>
+            <li>مستشفيات</li>
+            <li>تخصصات</li>
+            <li>مراكز متخصصة</li>
+            <li>اطباء</li>
+            <li>صيدليات</li>
+            <li>علاقات المستثمرين</li>
+            <li>مراكز متخصصة</li>
+            <li>خدمات الكترونيه</li>
+            <li>من نحن</li>
+            <li>التعليم</li>
+            <li>
+              <img src="./Assets/Search.png" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    
+
+      <script>
+       
+
+      y = document.getElementsByClassName("bars-icon");
+      y[0].addEventListener("click", function() {
+        var x = document.getElementById("mobile-list-list");
+        x.style.display = "flex";
+        y[0].style.display="none";
+      });
+      y[1].addEventListener("click", function() {
+        var x = document.getElementById("mobile-list-list");
+        x.style.display = "none";
+        y[0].style.display="block";
+
+      })
+        </script>
+</body>
+</html>
